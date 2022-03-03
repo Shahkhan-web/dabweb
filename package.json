@@ -1,0 +1,16 @@
+{
+  "name": "dabweb",
+  "version": "1.0.0",
+  "description": "Dar ul Buraq Delivery Services is a dubai based Delivery service company.We provide Bike,Car and Van with riders to small and large companies in all over United Arab Emirates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "dabdeliveryservices",
+    "darulburaq",
+    "dab"
+  ],
+  "author": "Ayyub,Shahzad,Abbass",
+  "license": "ISC"
+}
