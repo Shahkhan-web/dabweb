@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .preserve_3d {
+        transform-style: preserve-3d;
+        perspective: 10000px;
+        height: auto;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card_3d {
+    position: relative;
+    background-position: top center;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &:after {
+      content: '';
+      position: absolute;
+      height: 8px;
+      left: 0;
+      bottom: 0px;
+      box-shadow: 0 30px 20px rgba(0, 0, 0, .3);
+    }
+  }
+
+  .card-content_3d {
+    transform-style: preserve-3d;
+    text-align: center;
+
+  }
+  .img_3d {
+    color: #FFF;
+    transform: translateZ(100px);
+  }
+  
 }
