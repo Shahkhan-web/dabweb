@@ -1,0 +1,203 @@
+
+body {
+    font-family:Georgia, Times, 'Times New Roman', sans-serif !important;
+    transition: 1s;
+  }
+  .navbar {
+    margin-top: -20px;
+    position: relative;
+    margin-bottom: 0;
+    background-color: #fff;
+    transform: rotate(-1deg);
+    z-index: 10;
+
+  }
+  .navbar-nav .nav-item:hover {
+    background-color: #125383 !important;
+    color: #fff !important;
+  }
+  .nav_button {
+    color:#125383;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .nav_button:hover {
+    color: #fff;
+  }
+  .c-page
+  {
+    color: #FB6103;
+    border-radius: 5px;
+  }
+  .c-page:hover
+  {
+    color: #fff;
+    background-color: #FB6103;
+  }
+  .rotate_back
+  {
+    transform: rotate(1deg);
+    margin-top: 10px;
+  }
+  .rotate_back2
+  {
+    transform: rotate(-1deg);
+    margin-top: 10px;
+  }
+  .logo
+  {
+    margin-top: 10px;
+    width: 120px;
+  }
+  .img_co
+  {
+    height: 100vh;
+    width: 100%;
+  }
+
+.headline {
+  left: 130px;
+} 
+.Content_sec
+{
+  position: relative;
+  margin-bottom: 10;
+  margin-left: -3px;
+  width: 101%;
+  margin-top:-25px;
+  background-color: #FB6103;
+  z-index: 10;
+  transform: rotate(1deg);
+  height: auto;
+}
+.C_inherit
+{
+  background-color: inherit !important;
+  border: none !important;
+  color: #fff !important;
+}
+.card-title
+{
+  font-size: 23px;
+  font-weight: bold;
+  color: #125383;
+}
+.btn-primary
+{
+  background-color: #125383 !important;
+  border-color: #125383 !important;
+  color: #fff;
+  border-radius: 0px !important;
+}
+.btn-primary:hover
+{
+  background-color: #fff !important;
+  border-color: #125383 !important;
+  color: #125383 !important;
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #fff;
+  color: grey;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border: 1px solid #eee;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color:#125383;
+  color: #fff;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+@media (max-width: 750px) {
+  .footer, .hide {
+    display: none;
+  }
+}
+.footer {
+  position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #125383;
+  color: white;
+  text-align: center;
+}
+/* show M_footer in mobile */
+@media (max-width: 750px) {
+  .M_footer{
+    display: block !important;
+  }
+}
+.M_footer
+{
+  display: none;
+  margin-top: auto;
+  background-color: #125383;
+  height: 77px;
+  width: 100%;
+  color: #fff;
+}
+@media (max-width: 750px) {
+  .M-content
+  {
+    grid-template-columns:repeat(1,1fr);
+  }
+
+}
