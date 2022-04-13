@@ -1,0 +1,97 @@
+.form_box{
+    background: #fff;
+    padding: 30px;
+    border:1px solid #eeeeee;
+    border-radius: 20px;
+}
+.form_box span{
+    color: #125383;
+    font-weight: bold;
+    padding-bottom: 25px;
+    font-size: large;
+}
+.input_box{
+    padding: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.input_box input{
+    font-size: 15px;
+    padding: 0,10px;
+    display: block;
+    width: 100%;
+    border: 1px solid #eee;
+    font-weight: bold;
+    color: #125383;
+    letter-spacing: .5px;
+    background: #fff;
+}
+
+.input_box input::placeholder{
+    visibility: hidden;
+    font-weight: 400px;
+    font-size: 13px;
+    letter-spacing: .5px;
+
+}
+.input_box input:focus{
+    outline: none;
+    border: 1px solid #1569b2;
+    box-shadow: 0 0 5px #1569b2;
+    color: #555;
+}
+.input_box input:focus::placeholder{
+    visibility: visible;
+    color: #125383;
+
+}
+.input_box label{
+    color:#555;
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 25px;
+    top: 12px;
+    letter-spacing: .5px;
+    padding: 0px 5px;
+    transition: 0.2s;
+    background: #fff;
+
+}
+.input_box input:focus ~ label, .input_box input:valid ~ label{
+    top: -5px;
+    font-size: 12px;
+    color: hsl(205, 76%, 29%);
+    font-weight:500;
+}
+
+.input_box textarea::placeholder{
+    visibility: hidden;
+    font-weight: 400px;
+    font-size: 13px;
+    letter-spacing: .5px;
+
+}
+.input_box textarea:focus{
+    outline: none;
+    border: 1px solid #1569b2;
+    box-shadow: 0 0 5px #1569b2;
+    color: #555;
+}
+.input_box textarea:focus::placeholder{
+    visibility: visible;
+    color: #125383;
+
+}
+
+.input_box textarea:focus ~ label, .input_box textarea:valid ~ label{
+    top: -5px;
+    font-size: 12px;
+    color: hsl(205, 76%, 29%);
+    font-weight:500;
+}
+.card
+{
+    border: none !important;
+}

@@ -49,6 +49,13 @@ body {
     transform: rotate(-1deg);
     margin-top: 10px;
   }
+  @media (max-width: 500px) {
+    .rotate_back2
+    {
+     transform: rotate(0deg);
+     margin-left: 0px;
+    }
+  }
   .logo
   {
     margin-top: 10px;
@@ -56,8 +63,14 @@ body {
   }
   .img_co
   {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+  }
+  @media (max-width: 500px) {
+    .logo
+    {
+      height: 80%;
+    }
   }
 
 .headline {
@@ -65,15 +78,26 @@ body {
 } 
 .Content_sec
 {
-  position: relative;
+  position:relative;
   margin-bottom: 10;
   margin-left: -3px;
-  width: 101%;
+  width: 100vw;
   margin-top:-25px;
   background-color: #FB6103;
   z-index: 10;
   transform: rotate(1deg);
   height: auto;
+  padding-top:30px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+@media (max-width: 500px) {
+  .Content_sec
+  {
+  padding: 0px !important;
+   transform: rotate(0deg);
+   margin-left: 0px;
+  }
 }
 .C_inherit
 {
@@ -197,7 +221,21 @@ body {
 @media (max-width: 750px) {
   .M-content
   {
-    grid-template-columns:repeat(1,1fr);
+    display:flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap;
   }
 
+}
+.resposive-font
+{
+  font-size: 2.5em;
+}
+@media (max-width: 500px) {
+  .resposive-font
+  {
+    font-size: 2em;
+  }
 }
