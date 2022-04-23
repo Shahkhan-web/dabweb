@@ -1,7 +1,7 @@
 {
   "name": "dab_web",
   "version": "1.0.0",
-  "description": "Dar ul Buraq Delivery services is a Dubai Based logistic Company.We proivde bike riders with bike and fuel to small and large companies in Dubai, Sharjah and Abu dhabi",
+  "description": "DaralBuraq Delivery services is a Dubai Based logistic Company.We proivde bike riders with bike and fuel to small and large companies in Dubai, Sharjah and Abu dhabi",
   "main": "Index.js",
   "scripts": {
     "start": "live-server--no-css-inject"
